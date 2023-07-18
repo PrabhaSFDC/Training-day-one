@@ -37,5 +37,20 @@ public class Training
         system.debug('Reversed Name = ' + reverseName);
     
         }
-    
-    }
+        public static void primeNumber(){
+            for(Integer prime = 1;prime<=100;prime++){
+                Integer count = 0;
+                for(Integer num = prime;num>=1; num-- ){
+                    if(Math.mod(prime, num)==0){
+                        count++;
+                    }
+                    if(count==2 || count==1){
+                        System.debug(prime);
+                    }
+                    else{
+                        System.debug('Not a primeNumber');
+                    }
+                }
+            }
+        }
+        }   
